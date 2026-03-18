@@ -1,0 +1,2287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <style>
+
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+body{
+    background: linear-gradient(320deg,#ffffff, pink);
+    height: 1600px;
+   border-bottom-left-radius: 10%;
+   border-bottom-right-radius: 10%;
+}
+
+.container{
+    width: 100%;
+height: 100vh;
+
+}
+.navbar h1{
+    float: left;
+     cursor: pointer;
+    margin-top: 12px;
+    margin-left: 10px;
+    color: rgb(5, 2, 2);
+}
+
+.btn{
+    width: 105px;
+    background-color: #7ad76d;
+    color:#071525 ;
+    height: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+   
+    text-align: center;
+    margin: 11px 20px 0 0;
+    box-shadow: 0px 0px 10px  #b6b0b0 ;
+    padding: 10px;
+     cursor: pointer;
+     font-size: 15px;
+ float: right;
+ border-radius: 10px;
+   
+}
+.navbar{
+
+background:white;
+/* border: 1px solid ; */
+width: 94%;
+height: 10vh;
+border-radius: 20px;
+margin-left: 42px;
+margin-top: 20px;
+box-shadow: 0px 0px 20px #b6b0b0;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+      margin-left: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.nav .hov{
+/* padding-top: 3px; */
+    font-size: 20px;
+    list-style: none;
+    margin: 18px 20px 20px 20px;
+
+    cursor: pointer;
+    color:black;
+   
+}
+
+ .hov:hover{
+color: rgb(231, 146, 160);
+
+}
+
+.login {
+    display: flex;
+    margin: 4% auto;
+    background-color: #ffffff;
+    width: 93%;
+    border-radius: 15px;
+    height: 120vh;
+}
+
+/* LEFT FORM SECTION */
+.form-1 {
+    width: 62%;
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+    background-color: #ffffff;
+  
+    border-radius: 15px 0 0 15px;
+}
+
+.form-1  form{
+    width: 50%;
+}
+
+/* RIGHT IMAGE SECTION */
+.img-form {
+    width: 50%;
+   
+    background-color: #ffffff; /* temporary background */
+    border-radius: 0 15px 15px 0;
+}
+
+.modren{
+    margin-right: 60px;
+    margin-top: 5px;
+}
+
+
+
+/* HEADINGS */
+.login h1 {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.login h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 31px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+}
+
+.login p{
+        text-align: center;
+    color: #333;
+   margin-left: 6px;
+    margin-bottom: 16px;
+    width: 110%;
+    margin-left: -16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* FORM */
+.form-group {
+    margin-bottom: 18px;
+    
+}
+
+.form-name{
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+   
+}
+
+.form-1 input{
+    width: 90%;
+  padding: 15px 30px 15px 10px; 
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+    margin-right: 40px;
+    font-size: 14px;
+    transition: 0.3s;
+
+}
+
+.form-1 input:focus{
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+}
+
+
+.a{
+    width: 100%;
+    height: 10vh;
+}
+.options {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+   
+  
+  
+
+   
+}
+
+.remember {
+    display: flex;
+   align-items: center;
+    margin-right: 10px;
+    width: 400px;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #444;
+}
+
+.remember input {
+    width: 14px;
+    height: 12px;
+ 
+    cursor: pointer;
+   
+    margin: 1%;
+}
+
+.forgot {
+    font-size: 14px;
+    width: 200px;
+    margin-right: 30px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: #333;
+    text-decoration: underline;
+}
+
+.forgot:hover {
+    opacity: 0.8;
+}
+
+ .form-btn-1{
+   
+    margin-top: 5% ;
+  display: flex;
+  justify-content: center;
+    border: none;
+    padding: 15px 0px;
+   
+    font-size: 17px;
+   margin-right: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   cursor: pointer;
+    width: 101%;
+    background-color:#ee6f22;
+ 
+}
+
+.form-btn-1:hover{
+box-shadow: 0px 0px 10px rgb(146, 123, 92);
+  transform: scaleX(1);
+   transition: 0.3;
+}
+
+.form-btn-2{
+       
+   
+    display: block;
+    border: none;
+    margin-top: 5%;
+    padding: 15px 0px 15px 0;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+    width: 101%;
+    cursor: pointer;
+    text-align: center;
+    /* margin-left: 4px; */
+    border-radius: 7px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   /* box-shadow: 0px 0px 2px #848383; */
+  border: 1px solid #333;
+}
+
+.form-btn-2:hover{
+box-shadow: 0px 0px 7px rgb(146, 123, 92);
+  transform: scaleX(1);
+   transition: 0.3;
+}
+
+.form-end{
+    display: flex;
+    width: 100%;
+    margin-top: 4%;
+    margin-left: 55px;
+   
+}
+
+.form-end p{
+    margin-right: 0px;
+    color: #333;
+    width: 170px;
+    text-align: left;
+  
+}
+
+.form-end a{
+ 
+   color: #333;   
+    width: 53px;
+    height: 20px;
+    }
+
+
+.form-end a:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+/* next  */
+
+
+
+
+.rating{
+  
+   
+    margin-top: 7%;
+   
+}
+
+.clutch{
+    display: flex;
+    justify-content: center;
+  font-size: 30px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.clients{
+     display: flex;
+     font-size: 20px;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.needs{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 40px;
+
+}
+
+.craft{
+  display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.book{
+display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.view{
+margin: 5px;
+text-decoration: none;
+
+    background-color: rgb(133, 255, 133);
+    padding: 7px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 7px;
+    color: black;
+    box-shadow: 0px 0px 10px #b6b0b0;
+}
+
+.price{
+margin: 5px;
+text-decoration: none;
+ padding: 7px;background-color: white;
+ border-radius: 7px;
+ color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+box-shadow: 0px 0px 10px #b6b0b0;
+
+}
+
+.spot{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    color:#333;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.trust{
+      display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.useful{
+    overflow-x: auto;
+    justify-content: center;
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    gap: 1em;
+   
+}
+
+
+.group{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+   column-gap: 5em;
+     width: 100%;
+    
+     animation: spin 7s infinite linear;
+    
+    
+}
+
+
+
+.useful::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    flex: 0 0 5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 28px;
+ 
+   margin-top: 2%;
+
+ 
+   margin-bottom: 100px;
+   
+   
+    
+}
+
+
+
+@keyframes spin{
+From {translate: 0;}
+to {translate: -100%;}
+} 
+
+.horizon{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mind{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.quantum{
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* next */
+
+.service{
+    background-color: #ffffff;
+    height: 35vh;
+    width: 100%;
+}
+
+.brand{
+    float: left;
+   
+    margin-top: 6%;
+    margin-left: 5%;
+
+}
+
+.brand h1{
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 34px;
+}
+
+/* brand right side */
+
+.brand-right{
+    float: right;
+    margin-top: 6%;
+    margin-right: 5%;
+}
+
+
+.brand-right p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    font-size: 18px;
+}
+
+.text-hover-effect-1 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 5px;
+  color: #333;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.text-hover-effect-1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg,pink);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  border-radius: 3px;
+}
+
+.text-hover-effect-1:hover::after {
+  transform: scaleX(1);
+  transform-origin:bottom left;
+}
+
+
+/* big container  */
+
+
+.market{
+    width: 100%;
+    height: 80vh;
+    grid-template-columns: repeat(3,350px) ;
+    column-gap: 20px;
+    justify-content: center;
+    row-gap: 14px;
+    display: grid;
+    background-color: white;
+}
+
+.pic-1{
+    background-image: url(brand-img-3.jpg);
+    background-size: cover;
+}
+
+.pic-2{
+    height: 258px;
+    background-image: url(brand-img-2.jpg);
+    background-size: cover;
+}
+
+
+
+
+.pic-3{
+    background-image: url(brand-img.jpg);
+    background-size: cover;
+}
+
+/* card start  */
+
+
+.card-1{
+    border: 1.5px #333 solid;
+   border-radius: 12px;
+    height: 200px;
+    box-shadow: 0px 0px 15px rgb(186, 184, 184);
+}
+
+.card-2{
+    border: 1.5px #333 solid;
+   border-radius: 12px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        box-shadow: 0px 0px 15px rgb(186, 184, 184);
+    height: 200px;
+}
+.card-3{
+    border: 1.5px #333 solid;
+      box-shadow: 0px 0px 15px rgb(186, 184, 184);
+    border-radius: 12px;
+    height: 200px;
+}
+
+/* cards end */
+
+
+
+
+
+/* heading  */
+
+.card-1 h1{
+   margin: 20px 0 0 30px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 26px;
+}
+
+/* paragraph */
+.card-1 p{
+    margin: 10px 0 0 30px;
+    color: #333;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+
+/* DIRECTIONS */
+
+.direction{
+
+display: grid;
+margin: 5px 0 0 25px;
+gap: 4px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #333;
+grid-template-columns:repeat(2,130px);
+text-align: center;
+}
+
+.direction .art-1{
+
+background-color: #ffd9d8;
+padding: 4px 0 1px 0px;
+border-radius: 14px;
+}
+.direction .art-2{
+    background-color:#ffe4fd;
+border-radius: 14px;
+
+padding: 3px 6px 6px 3px ;
+}
+.direction .art-3{
+background-color: #d6effc;
+padding: 4px 4px 5px 2px;
+border-radius: 14px;
+}
+.direction .art-4{
+border-radius: 14px;
+background-color: #d5ddfe;
+padding: 4px 4px 3px 3px;
+}
+
+/* next card 2 */
+
+
+
+.card-2 h1{
+   
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     margin: 20px 0 0 30px;
+     font-size: 26px;
+}
+
+
+/* paragraph */
+.card-2 p{
+    margin: 5px 0 0 30px;
+    color: #333;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+
+/* DIRECTIONS */
+
+.direction{
+
+display: grid;
+margin: 5px 0 0 25px;
+gap: 4px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #333;
+grid-template-columns:repeat(2,130px);
+text-align: center;
+}
+
+.direction .art-1{
+
+background-color: #ffd9d8;
+padding: 4px 0 1px 0px;
+border-radius: 14px;
+}
+.direction .art-2{
+    background-color:#ffe4fd;
+border-radius: 14px;
+
+padding: 3px 6px 6px 3px ;
+}
+.direction .art-3{
+background-color: #d6effc;
+padding: 4px 4px 5px 2px;
+border-radius: 14px;
+}
+.direction .art-4{
+border-radius: 14px;
+background-color: #d5ddfe;
+padding: 4px 4px 3px 3px;
+}
+
+
+/* next card 3 */
+
+/* heading  */
+
+.card-3 h1{
+   margin: 20px 0 0 30px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 25.5px;
+}
+
+/* paragraph */
+.card-3 p{
+    margin: 10px 0 0 30px;
+    color: #333;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+
+/* DIRECTIONS */
+
+.direction{
+
+display: grid;
+margin: 5px 0 0 25px;
+gap: 4px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #333;
+grid-template-columns:repeat(2,130px);
+text-align: center;
+}
+
+.direction .art-1{
+
+background-color: #ffd9d8;
+padding: 4px 0 1px 0px;
+border-radius: 14px;
+}
+.direction .art-2{
+    background-color:#ffe4fd;
+border-radius: 14px;
+
+padding: 3px 6px 6px 3px ;
+}
+.direction .art-3{
+background-color: #d6effc;
+padding: 4px 4px 5px 2px;
+border-radius: 14px;
+}
+.direction .art-4{
+border-radius: 14px;
+background-color: #d5ddfe;
+padding: 4px 4px 3px 3px;
+}
+
+/* next big container  */
+
+
+.work{
+background-color: #ffffff;
+height: 230vh;
+width: 100%;
+}
+
+
+
+.work-done{
+        background-color: #ffffff;
+    height: 35vh;
+    width: 100%;
+}
+
+.feature{
+    float: left;
+   
+    margin-top: 6%;
+    margin-left: 5%;
+
+}
+
+.feature h1{
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 34px;
+}
+
+/* brand right side */
+
+.feature-right{
+    float: right;
+    margin-top: 6%;
+    margin-right: 5%;
+}
+
+
+.feature-right p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    font-size: 18px;
+}
+
+.feature-hover-effect-1 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 5px;
+  color: #333;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.feature-hover-effect-1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg,pink);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  border-radius: 3px;
+}
+
+.feature-hover-effect-1:hover::after {
+  transform: scaleX(1);
+  transform-origin:bottom left;
+}
+
+/* feature img  */
+
+.feature-img{
+    display: grid;
+    gap: 20px;
+
+    justify-content: center;
+    grid-template-columns: repeat(2,490px)
+    
+}
+
+.feature-photo-1{
+    height: 560px;
+    background-image: url('featur-6.jpg');
+    background-size: cover;
+}
+.feature-photo-2{
+    height: 560px;
+      background-image: url('feature-8.jpg');
+    background-size: cover;
+}
+.feature-photo-3{
+    height: 560px;
+    background-image: url('feature-img-5.jpg');
+    background-size: cover;
+}
+.feature-photo-4{
+    background-image: url('feature-img-3.jpg');
+    background-size: cover;
+    height: 560px;
+}
+
+/* next part  */
+
+.money{
+    background-color: #ffffff;
+    height: 30vh;
+    width: 100%;
+}
+
+.need-left{
+    float: left;
+   
+    margin-top: 6%;
+    margin-left: 5%;
+
+}
+
+.need-left h1{
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 34px;
+}
+
+/* brand right side */
+
+.need-right{
+    float: right;
+    margin-top: 6%;
+    margin-right: 5%;
+}
+
+
+.need-right p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    font-size: 18px;
+}
+
+/* next  */
+
+.pro{
+    width: 100%;
+    background-color: #ffffff;
+  
+    height: 90vh;
+
+    column-gap: 13px;
+    display: flex;
+}
+
+/* project  */
+.project-left{
+    width: 45%;
+   border-radius: 20px;
+   margin-left: 70px;
+    background-color:#c3b09f;
+}
+
+
+
+.result{
+     display: flex;
+}
+
+.rate{
+    font-size: 42px;
+    color: #48302e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px 0 0 40px;
+}
+
+.side-rate{
+    color: #48302e;
+    margin:25px 0 0 160px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+
+.stars{
+
+ background-image: url('https://t3.ftcdn.net/jpg/08/16/47/14/360_F_816471434_wGZKn21gq15ncbSIGOIauBpmqVSQLLXg.jpg');
+ height: 50vh;
+ background-size: cover;
+width: 100%;
+
+
+}
+
+
+.project-left h1{
+    color: #48302e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 33px;
+    margin-left: 50px;
+}
+
+.project-left .hit{
+       color: #333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 5px;
+    margin-left: 50px;
+}
+
+.project-left a{
+    background-color: #ffffff;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    width: 70%;
+    padding: 10px 16px;
+    margin-top: 20px;
+    display: flex;
+ margin-left: 56px;border-radius: 9px;
+
+ text-decoration: none;
+    justify-content: center;
+}
+
+.project-left a:hover{
+
+box-shadow: 0 0px 10px #48302e;
+opacity: 0.8;
+
+}
+/* project right  */
+
+.project-right{
+   
+    width: 55%;
+}
+
+
+.project-right-img{
+    background-image: url(https://img.freepik.com/premium-vector/social-media-post-template-testimonials-customers-review-business-product-customer-review_197792-5480.jpg);
+   background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    border-radius: 15px;
+    height: 90vh;
+}
+
+
+/* next big .container */
+
+
+
+.buyer{
+    height: 35vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.insight-left{
+    float: left;
+   
+    margin-top: 6%;
+    margin-left: 5%;
+
+}
+
+.insight-left h1{
+   
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 34px;
+}
+
+/* brand right side */
+
+.insight-right{
+    float: right;
+    margin-top: 6%;
+    margin-right: 5%;
+}
+
+
+.insight-right p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    font-size: 18px;
+}
+
+.view-hover-effect-1 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 5px;
+  color: #333;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.view-hover-effect-1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg,pink);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  border-radius: 3px;
+}
+
+.view-hover-effect-1:hover::after {
+  transform: scaleX(1);
+  transform-origin:bottom left;
+}
+
+
+
+
+
+
+
+/* improve image big conatiner  */
+
+   
+.improve-form{
+      grid-template-columns: repeat(3,370px);
+    display: grid;
+    
+     background-color: #ffffff;
+     justify-content: center;
+     gap: 10px 10px;
+
+}
+.trend{
+  
+    height: 280px;
+     box-shadow: 0px 0px 10px rgb(209, 209, 209);
+}
+
+
+/* trend start  */
+
+.trend-1{
+    background-image: url(https://images.unsplash.com/photo-1543965860-82ed7d542cc4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fG1vYmlsZSUyMHBob25lfGVufDB8fDB8fHww);
+    background-size: cover;
+    border-radius: 6px;
+}
+.trend-2{
+    background-image: url(https://images.unsplash.com/photo-1416339134316-0e91dc9ded92?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJyYW5kaW5nfGVufDB8fDB8fHww);
+    background-size: cover;
+    border-radius: 6px;
+
+}
+.trend-3{
+    background-image: url(https://images.unsplash.com/photo-1633533446349-9040bad8260b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fGJyYW5kaW5nfGVufDB8fDB8fHww);
+    background-size: cover;
+    border-radius: 6px;
+}
+
+
+.trend-equal{
+   box-shadow: 0px 0px 10px rgb(209, 209, 209);
+    height: 28vh;
+    border-radius: 6px;
+
+}
+
+.trend-last-1 h1{
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ margin: 20px 0 0 20px;
+ color: #333;
+  font-size: 28px;
+}
+
+.trend-last-1 p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+    color: #333;
+   
+}
+
+ .trend-1-hover-effect-1 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 5px;
+
+  color:orange;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 4px 0;
+  margin-left: 20px;
+}
+
+.trend-1-hover-effect-1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg,orange);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  border-radius: 3px;
+}
+
+.trend-1-hover-effect-1:hover::after{
+  transform: scaleX(1);
+  transform-origin:bottom left;
+}
+
+/* next  */
+
+
+.trend-last-2 h1{
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 28px;
+ margin: 20px 0 0 20px;
+ color: #333;
+}
+
+.trend-last-2 p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+    color: #333;
+}
+
+ .trend-2-hover-effect-1 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 5px;
+
+  color:orange;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 4px 0;
+  margin-left: 20px;
+}
+
+.trend-2-hover-effect-1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg,orange);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  border-radius: 3px;
+}
+
+.trend-2-hover-effect-1:hover::after{
+  transform: scaleX(1);
+  transform-origin:bottom left;
+}
+
+
+/* next  */
+
+
+.trend-last-3 h1{
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ margin: 20px 0 0 20px;
+ font-size: 28px;
+ color: #333;
+}
+
+.trend-last-3 p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+    color: #333;
+}
+
+ .trend-3-hover-effect-1 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 5px;
+
+  color:orange;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 4px 0;
+  margin-left: 20px;
+}
+
+.trend-3-hover-effect-1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg,orange);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  border-radius: 3px;
+}
+
+.trend-3-hover-effect-1:hover::after{
+  transform: scaleX(1);
+  transform-origin:bottom left;
+}
+
+.lets{
+    display: flex;
+    width: 100%;
+   
+    height: 125vh;
+    background-color: #ffffff;
+    justify-content: center;
+    gap: 2%;
+}
+
+.talk-1{
+width: 40%;
+
+   margin-top: 60px;
+  
+}
+
+/* talk 1 content  */
+
+
+.talk-1 h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 170px 0 0 40px;
+    font-size: 45px;
+}
+
+.talk-1 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+    color: #333;
+
+}
+
+
+
+
+/* 
+.talk-2{
+    margin-top: 60px;
+   width: 45%;
+border: 2px solid purple;
+border-radius: 10px;
+background-color: #c3b09f;
+color: #ffffff;
+} */
+
+
+.form-container{
+width:500px;
+padding:35px;
+margin-top: 50px;
+border-radius:18px;
+background-color: #080604;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.contact-form{
+width:100%;
+}
+
+.form-row{
+display:flex;
+gap:15px;
+}
+
+.form-group{
+margin-bottom:20px;
+width:90%;
+}
+
+.form-label{
+display:block;
+color:#ffffff;
+margin-bottom:6px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size:14px;
+font-weight:500;
+}
+
+.form-input{
+width:80%;
+padding:12px 14px;
+border-radius:10px;
+border:1px solid rgba(255,255,255,0.15);
+background:rgba(255,255,255,0.05);
+color:#ffffff;
+outline:none;
+}
+
+.form-input::placeholder{
+color:#9aa4b2;
+}
+
+.form-textarea{
+width:100%;
+height:120px;
+padding:12px 14px;
+border-radius:10px;
+border:1px solid rgba(255,255,255,0.15);
+background:rgba(255,255,255,0.05);
+color:#fff;
+resize:none;
+outline:none;
+}
+
+.form-textarea::placeholder{
+color:#9aa4b2;
+}
+
+.form-btn{
+width:100%;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow: 0px 0px 1px grey;
+font-weight:600;
+margin-left: 20px;
+color:#fff;
+cursor:pointer;
+background-color: #ff4b00;
+
+}
+
+/* last container  */
+
+.last-contain{
+    height: 90vh;
+    display: flex;
+   
+   background-color: black;
+    width: 100%;
+  
+}
+
+/* footers child  */
+
+.foot-left{
+    width: 40%;
+   
+   
+  
+
+}
+
+.foot-right{
+   
+    width: 60%;
+    display: flex;
+}
+
+/* footer left small child  */
+
+.foot-left h1{
+    color: #ffffff;
+    font-size: 38px;
+   margin: 40px 0 10px 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.foot-para-1{
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 40px;
+}
+.foot-left h3{
+    color: #ffffff;
+    margin-top: 100px;
+    margin-left: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.foot-para-2{
+    color: #9a9ea9;
+       margin-left: 40px;
+       margin-bottom: 20px;
+}
+
+
+/* next  */
+
+.subscribe{
+    border: 1px solid gray;
+    margin: 40px 0 0 40px;
+    border-radius: 6px;
+   padding: 15px 10px;
+}
+
+.subscribe input{
+
+    background-color: black;
+    padding: 8px 15px 5px 15px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    
+}
+
+.subscribe a{
+    background-color: orangered;
+    padding: 5px 10px;
+    margin-left: 5px;text-decoration: none;
+    font-weight: bold;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   margin: 3px;
+   text-align: center;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.foot-para-3{
+    margin: 130px 0 0 40px;
+    color: #ebd8d8;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* right container  */
+
+
+
+.foot-right-1{
+    display: flex;
+   flex-direction: column;
+   row-gap: 26px;
+   color: #ffffff;
+   margin: 120px 0px 0px 150px;
+}
+
+.foot-right-1 h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.foot-right-1 a{
+    color: rgb(186, 183, 183);;
+    text-decoration: none;
+}
+
+/* next right 2 */
+
+
+.foot-right-2{
+    display: flex;
+   flex-direction: column;
+   row-gap: 26px;
+   color: #ffffff;
+   margin: 120px 0px 0px 70px;
+}
+
+.foot-right-2 h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.foot-right-2 a{
+    color: rgb(186, 183, 183);;
+    text-decoration: none;
+}
+
+/* next  */
+
+.foot-right-3{
+     margin: 120px 0px 0px 70px;
+     font-size: 14px;
+     height: 200px;
+  
+     color: #ffffff;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.foot-right-3 h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin-bottom: 12%;
+}
+
+
+/* icons  */
+
+.icons-dad{
+   margin-right: 30%;
+   clear: left;
+}
+
+.icons{
+    /* margin-right: 30px; */
+    color: #ffffff;
+    margin-top: 160px ;
+    display: flex;
+    font-size: 25px;
+     cursor: pointer;
+     width: 100px;
+     column-gap:10px ;
+}
+
+.social-icon{
+    
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.social-icon:hover{
+background-color: #ffffff;
+color: black;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .navbar {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav {
+        display: none; /* hide menu (optional: replace with hamburger) */
+    }
+
+    .login {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .form-1, .img-form {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .img-form img {
+        width: 100%;
+        height: auto;
+    }
+
+    .market {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .feature-img {
+        grid-template-columns: 1fr;
+    }
+
+    .pro {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-left, .project-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .project-right-img {
+        width: 100%;
+    }
+
+    .lets {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .talk-1, .talk-2 {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .improve-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .foot-right {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    body {
+        height: auto;
+    }
+
+    .navbar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar h1 {
+        float: none;
+        text-align: center;
+    }
+
+    .btn {
+        float: none;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .login {
+        margin: 20px auto;
+    }
+
+    .form-1 form {
+        width: 90%;
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .market {
+        grid-template-columns: 1fr;
+    }
+
+    .improve-form {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-img {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-photo-1,
+    .feature-photo-2,
+    .feature-photo-3,
+    .feature-photo-4 {
+        height: 300px;
+    }
+
+    .talk-1 h1 {
+        font-size: 30px;
+        margin: 40px 20px;
+    }
+
+    .talk-1 p {
+        margin: 0 20px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .last-contain {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .foot-left,
+    .foot-right {
+        width: 100%;
+    }
+
+    .foot-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot-right-1,
+    .foot-right-2,
+    .foot-right-3 {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+ <div class="container">
+      <div class="navbar">
+        <h1>Flow</h1>
+        <p class="btn"> Get Templates</p>
+        <div class="nav">
+        <li class="hov">Project</li>
+        <li class="hov">Benefits</li>
+        <li class="hov">Services</li>
+        <li class="hov">Pricing</li>
+   
+        </div>
+        </div>
+        
+     <div class="login">
+
+    <div class="form-1">   
+        
+        <form>
+            <h1>Flow Logo</h1>
+            <h2>Welcome Back</h2>
+            <p>Enter your account details below to continue</p>
+
+            <div class="form-group">
+                <label class="form-name" for="name">Your Email</label>
+                <input  type="email" id="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-name" for="password">Your Password</label>
+                <input  type="password" id="password"  placeholder="Password"  required>
+               
+            </div>
+
+
+<div class="options">
+    <label class="remember">
+        <input type="checkbox">
+        <span>Remember for 30 days</span>
+    </label>
+
+    <a href="#" class="forgot">Forgot password?</a>
+</div>
+
+<a  href="#" class="form-btn-1">Sign-in</a>
+
+<a href="#" class="form-btn-2">Sign-in with one time code</a>
+
+<div class="form-end">
+    <p>Don't have an account?</p>
+    <a href="">Sing-up</a>
+</div>
+
+     
+        </form>
+
+    </div>
+
+    <div class="img-form">
+       <img class="modren" src="Yellow Orange and Green Modern Website Design Services Flyer.jpg" alt="" width="520px" height="700px">
+    </div>
+
+</div>
+
+
+        <div class="rating">
+            <div class="clutch">Clutch &#10029;&#10029;&#10029;&#10029;&#10029;</div> <br>
+            <p class="clients">4.9 Rating From 300+ Happy Clients </p>
+
+            <h1 class="needs"> Your Bussiness Need More Than a <br> Website&#8212;It Needs </h1>
+
+            <span class="craft">We craft high performance websites designed to convert and scale. <br> Unlimited design, one simple plan. Elevate your brand effortlessly.</span>
+      <div class="book">   
+            <a class="view" href=""> Book an Intro Call</a>
+            <a class="price" href="">View Pricing</a>
+      </div>
+
+      <p class="spot">&#8226; 2 Spot Available</p>
+      <p class="trust">Trusted by 150+ Founders Worldwide</p>
+
+
+      <div class="useful">
+<div class="group">
+      <span class="card horizon">Horizon</span>
+      <span class="card mind">Mindscope</span>
+      <span class="card novo">Novotech</span>
+      <span class="card quantum">Quantum</span>
+      <span class="card horizon">Horizon</span>
+      <span class="card mind">Mindscope</span>
+
+      </div>
+        </div>
+
+
+        <div class="service">
+
+            <div class="brand">
+            
+            <h1>What We Do</h1>
+
+            </div>
+
+    <div class="brand-right">
+
+    <p>We craft strategic framworks that align your bussiness goals <br> with Buyyer expectations.</p>
+    <!-- <button>See All</button> -->
+     <div class="text-hover-effect-1">See All</div>
+    </div>
+
+        </div>
+
+
+        <div class="market">
+
+             <div class="pic-1">
+
+             </div>
+
+            <div class="pic-2">
+
+            </div>
+
+            <div class="pic-3">
+
+            </div>
+
+
+            <div class="card-1">
+             
+                <h1>brand Strategy</h1>
+                <p>We provide strategy that aligns terms, <br>
+                sharpens massaging & positions , and drives <br> 
+                stronger marketing outcomes.</p>
+
+                <div class="direction">
+                    <div class="art-1">
+                        <span class="art-color">&#10138;</span> Art Direction
+                    </div>
+                    <div class="art-2">
+                        <span>&#10138;</span> Brand Strategy
+                    </div>
+                    <div class="art-3">
+                        <span>&#10138;</span> Logo Design
+                    </div>
+                    <div class="art-4">
+                        <span>&#10138;</span> Color Systems
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-2">
+                  
+                <h1>brand Identity & Design</h1>
+                <p>We develop everything your name and <br>
+                visual identity to bussiness system, <br>
+            packings, and digital presence.</p>
+
+                <div class="direction">
+                    <div class="art-1">
+                        <span class="art-color">&#10138;</span> Art Direction
+                    </div>
+                    <div class="art-2">
+                        <span>&#10138;</span> Brand Strategy
+                    </div>
+                    <div class="art-3">
+                        <span>&#10138;</span> Logo Design
+                    </div>
+                    <div class="art-4">
+                        <span>&#10138;</span> Color Systems
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-3">
+                 
+                <h1>Marketing & Advertising</h1>
+                <p>We execute campaigns across digital, <br>
+                traditional, and emerging channels, placing <br>
+                media, and optimizing results for first.</p>
+
+                <div class="direction">
+          
+                    <div class="art-1">
+                        <span class="art-color">&#10138;</span> Art Direction
+                    </div>
+                    <div class="art-2">
+                        <span>&#10138;</span> Brand Strategy
+                    </div>
+                    <div class="art-3">
+                        <span>&#10138;</span> Logo Design
+                    </div>
+                    <div class="art-4">
+                        <span>&#10138;</span> Color Systems
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+ </div>
+
+ <div class="work">
+   <div class="work-done">
+      <div class="feature">
+            
+            <h1>Featured Work</h1>
+
+            </div>
+
+    <div class="feature-right">
+
+    <p>A look at some of the brands we're helped and outcomes<br> we're delivered.</p>
+    <!-- <button>See All</button> -->
+     <div class="feature-hover-effect-1">See All</div>
+    </div>
+        </div>
+
+
+
+<div class="feature-img">
+    <div class="feature-photo-1"></div>
+    <div  class="feature-photo-2"></div>
+    <div  class="feature-photo-3"></div>
+    <div  class="feature-photo-4"></div>
+</div>
+   </div>
+ 
+
+<div class="money">
+   <div class="need">
+
+    <div class="need-left">
+            
+            <h1>Success Stories</h1>
+
+     </div>
+
+    <div class="need-right">
+
+    <p>Discover how our design subscription helps innovatives brands <br> grow smarter and faster.</p>
+   
+    </div>
+
+   </div>
+
+
+   </div>
+
+
+
+   <div class="pro">
+
+<div class="project-left">
+
+    <div class="result">
+<p class="rate">4.9/5</p>
+<p class="side-rate">we're delivered 100+ <br> projects that drive <br> real results.</p>
+    </div>
+
+<div class="stars"></div>
+
+<h1>Trusted by 100+ Businesses</h1>
+<p class="hit">they hit there target - you're next</p>
+
+<a href="#">Leave a review</a>
+
+
+
+
+</div>
+
+<div class="project-right">
+
+<div class="project-right-img">
+
+</div>
+</div>
+   </div>
+
+<!-- next  -->
+
+   <div class="buyer">
+
+            <div class="insight-left">
+            
+            <h1>What We Do</h1>
+
+            </div>
+
+    <div class="insight-right">
+
+    <p>We craft strategic framworks that align your bussiness goals <br> with Buyyer expectations.</p>
+    <!-- <button>See All</button> -->
+     <div class="view-hover-effect-1">See All</div>
+    </div>
+
+       
+ </div>
+
+
+<!-- next container  -->
+
+ <div class="improve-form">
+    <div class="trend trend-1"></div>
+    <div class="trend trend-2"></div>
+    <div class="trend trend-3"></div>
+
+
+    <div class="trend-last-1 trend-equal">
+        <h1>Marketing Trends</h1>
+        <p>We provide strategy that aligns terms, <br>
+                sharpens massaging & positions , and drives <br> 
+                stronger marketing outcomes.</p>
+        <div class="trend-1-hover-effect-1">Read more</div>
+    </div>
+    <div class="trend-last-2 trend-equal">
+           <h1>AI Buyer Experience</h1>
+        <p>We provide strategy that aligns terms, <br>
+                sharpens massaging & positions , and drives <br> 
+                stronger marketing outcomes.</p>
+        <div class="trend-2-hover-effect-1">Read more</div>
+    </div>
+    <div class="trend-last-3 trend-equal">
+          <h1>Improve B2B Messaging</h1>
+        <p>We provide strategy that aligns terms, <br>
+                sharpens massaging & positions , and drives <br> 
+                stronger marketing outcomes.</p>
+        <div class="trend-3-hover-effect-1">Read more</div>
+    </div>
+    </div>
+
+
+
+
+    <div class="lets">
+
+
+        <div class="talk-1">
+
+            <h1>Let's Talk</h1>
+            <p>Got question or ready to start ypur design project? Let's <br> bring your ideas to life!</p>
+        </div>
+
+
+        <div class="talk-2">
+
+
+
+<div class="form-container">
+
+<form class="contact-form">
+
+<div class="form-row">
+
+<div class="form-group">
+<label class="form-label">First name</label>
+<input type="text" class="form-input" placeholder="First name">
+</div>
+
+<div class="form-group">
+<label class="form-label">Last name</label>
+<input type="text" class="form-input" placeholder="Last name">
+</div>
+
+</div>
+
+<div class="form-group">
+<label class="form-label">Email</label>
+<input type="email" class="form-input" placeholder="Email">
+</div>
+
+<div class="form-group">
+<label class="form-label">Website</label>
+<input type="text" class="form-input" placeholder="Your Website">
+</div>
+
+<div class="form-group">
+<label class="form-label">Write Message</label>
+<textarea class="form-textarea" placeholder="Write your message..."></textarea>
+
+<button class="form-btn">Send message</button>
+
+
+</div>
+</form>
+</div>
+        </div>
+        
+    </div>
+       
+
+<!-- Next -->
+
+
+<div class="last-contain">
+    <div class="foot-left">
+        
+    <h1 > Flow</h1>
+    <p class="foot-para-1"> Strategy. Design. Performance. Unified for measurable <br> ROI.</p>
+    <h3> Newsletter</h3>
+    <p class="foot-para-2">Sign up for our newsletter below.</p>
+
+
+ <label class="subscribe" for="">
+    <input type="email" placeholder="Enter your email address.." required>
+    <a href="">Subscribe</a>
+ </label>
+
+
+ <p class="foot-para-3">Flow&#169; 2026. privacy Accessibility Terms Licenses Site map</p>
+    </div>
+
+
+
+    <div class="foot-right">
+        <div class="foot-right-1">
+            <h1>Company</h1>
+            <a href="">Home</a>
+            <a href="">Work</a>
+            <a href="">Services</a>
+            <a href="">About Us</a>
+            <a href="">Blog</a>
+        </div>
+
+
+        <div class="foot-right-2">
+              <h1>Support</h1>
+            <a href="">Privacy Policy</a>
+            <a href="">terms and Services</a>
+            <a href="">Careers</a>
+            <a href="">Contact</a>
+            <a href="">Marketplaces</a>
+        </div>
+
+
+        <div class="foot-right-3">
+          <h1>Contact Us</h1>
+          <p>Contact@example.com</p>
+          <p>+92 3703799040</p>
+          <p>17304 Ismail Nagar, <br> Kot-Lkahpat <br> Lahore, Pakistan</p>
+
+          <div class="icons-dad">
+     <div class="icons">
+           
+            <div class=" social-icon ">
+             <i class="fa-brands fa-instagram"></i>
+            </div>
+
+            <div class=" social-icon ">
+            <i class="fa-brands fa-twitter"></i>
+            </div>
+
+            <div class=" social-icon ">
+            <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+
+            <div class=" social-icon ">
+            <i class="fa-brands fa-facebook-f"></i>
+            </div>
+        </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
